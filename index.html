@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Art love لتصميم المواقع الإلكترونية وصفحات الهبوط ومواقع الشركات وتصميم اللوجوهات.">
+  <meta name="theme-color" content="#080d19">
+  <title>Art love | تصميم مواقع وهوية بصرية</title>
+  <style>
+    :root{--bg:#080d19;--panel:#101a2b;--panel2:#14233a;--blue:#54b7ff;--blue2:#1689e8;--text:#f5f8ff;--muted:#aab8cc;--line:rgba(133,181,231,.17)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#102c4b 0,transparent 38%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(8,13,25,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{display:flex;align-items:center;gap:10px;font-size:1.25rem;font-weight:900;color:var(--blue);letter-spacing:.2px}.brand-logo{width:48px;height:48px;object-fit:contain;border-radius:50%;border:1px solid #d9a83f;box-shadow:0 0 16px #d9a83f33;background:#050505}.links{display:flex;gap:24px;color:var(--muted);font-size:.95rem}.links a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#04101d;font-weight:800;box-shadow:0 8px 28px #1689e833;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn-outline{background:transparent;border:1px solid var(--blue);color:var(--blue);box-shadow:none}
+    .hero{padding:100px 0 82px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px}.eyebrow{display:inline-block;padding:6px 13px;border:1px solid #54b7ff55;border-radius:30px;color:var(--blue);background:#54b7ff0c;font-size:.88rem}.hero h1{font-size:clamp(2.4rem,5vw,4.6rem);line-height:1.25;margin:18px 0}.hero h1 span{color:var(--blue)}.hero p{color:var(--muted);font-size:1.12rem;max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .visual{min-height:340px;border:1px solid #54b7ff44;border-radius:26px;background:linear-gradient(145deg,#122a46,#0b1424 70%);padding:22px;position:relative;overflow:hidden;box-shadow:0 25px 80px #0008}.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.visual:before{width:210px;height:210px;background:#1689e833;top:-65px;left:-45px}.visual:after{width:160px;height:160px;background:#54b7ff22;bottom:-60px;right:-35px}.screen{position:relative;z-index:1;border:1px solid #ffffff22;border-radius:16px;background:#080f1d;padding:18px;height:100%;min-height:292px}.screen-top{display:flex;gap:6px;margin-bottom:25px}.dot{width:8px;height:8px;border-radius:50%;background:#54b7ff88}.screen h3{font-size:1.8rem;margin:0 0 8px}.screen p{font-size:.9rem;color:var(--muted)}.mock-line{height:9px;background:#54b7ff22;border-radius:9px;margin:12px 0;width:85%}.mock-line.short{width:55%}.mock-card{height:72px;border-radius:12px;background:linear-gradient(100deg,#173b60,#102139);margin-top:20px}
+    section{padding:72px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.section-head h2{font-size:2.1rem;margin:0 0 8px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:linear-gradient(150deg,var(--panel),#0d1625);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.2s}.card:hover{transform:translateY(-5px);border-color:#54b7ff77}.ico{width:48px;height:48px;border-radius:14px;background:#54b7ff18;color:var(--blue);display:grid;place-items:center;font-size:1.45rem;margin-bottom:15px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted);font-size:.94rem}
+    .project{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center;background:linear-gradient(120deg,#101d30,#0d1523);border:1px solid var(--line);border-radius:22px;padding:22px}.project-preview{min-height:210px;border-radius:15px;background:radial-gradient(circle at 50% 30%,#225a88,#0c1728 70%);display:grid;place-items:center;text-align:center;padding:20px}.project-preview strong{font-size:1.7rem}.project p{color:var(--muted)}.project .btn{margin-top:8px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step-number{color:var(--blue);font-weight:900;font-size:1.7rem}
+    .contact{background:linear-gradient(135deg,#102b47,#0d1728);border:1px solid #54b7ff44;border-radius:24px;padding:42px;text-align:center}.contact p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center;font-size:.9rem}
+
+    .social-links{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .social-link{display:inline-flex;align-items:center;gap:9px;padding:10px 16px;border:1px solid var(--line);border-radius:12px;background:#0b1728;color:var(--text);font-weight:700;transition:.2s}
+    .social-link:hover{border-color:var(--blue);transform:translateY(-2px);color:var(--blue)}
+    .social-link svg{width:21px;height:21px;display:block;fill:currentColor}
+    .footer-inner{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap}
+    .wa-float{position:fixed;bottom:20px;left:20px;z-index:20;border-radius:50px;padding:13px 18px;background:#20c879;color:#062416;font-weight:900;box-shadow:0 8px 25px #0008}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding:70px 0 55px}.visual{min-height:280px}.grid{grid-template-columns:repeat(2,1fr)}.project{grid-template-columns:1fr}}
+    @media(max-width:560px){nav{padding:12px 0;flex-wrap:wrap}.links{order:3;width:100%;justify-content:space-between;gap:8px;font-size:.82rem}.nav-cta{font-size:.85rem;padding:9px 12px}.hero h1{font-size:2.5rem}.grid,.steps{grid-template-columns:1fr}.contact{padding:28px 18px}section{padding:55px 0}}
+  </style>
+<link rel="icon" type="image/png" href="logo.png"></head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="#home"><img class="brand-logo" src="logo.png" alt="شعار Art love"> <span>Art love</span></a>
+    <div class="links">
+      <a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#about">طريقة العمل</a><a href="#contact">تواصل معنا</a>
+    </div>
+    <a class="btn nav-cta" href="https://wa.me/201140182250" target="_blank" rel="noopener">اطلب خدمتك</a>
+  </nav>
+</header>
+<main>
+  <div class="container hero" id="home">
+    <div>
+      <span class="eyebrow">حلول رقمية بطابع إبداعي</span>
+      <h1>خلّي فكرتك تظهر<br><span>بشكل احترافي</span></h1>
+      <p>في Art love بنساعدك تعرض مشروعك على الإنترنت من خلال مواقع عصرية، وصفحات هبوط واضحة، وهويات بصرية تسيب انطباع مميز.</p>
+      <div class="actions"><a class="btn" href="https://wa.me/201140182250?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%88%D9%82%D8%B9" target="_blank" rel="noopener">ابدأ مشروعك على واتساب ↗</a><a class="btn btn-outline" href="#work">شاهد أعمالنا</a></div>
+    </div>
+    <div class="visual" aria-label="معاينة تصميم موقع">
+      <div class="screen"><div class="screen-top"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><span style="color:var(--blue);font-weight:bold">ART LOVE STUDIO</span><h3>نصمم حضورك الرقمي</h3><p>تصميم بسيط. تجربة واضحة. انطباع يدوم.</p><div class="mock-line"></div><div class="mock-line short"></div><div class="mock-card"></div></div>
+    </div>
+  </div>
+  <section id="services">
+    <div class="container"><div class="section-head"><h2>خدماتنا</h2><p>كل اللي تحتاجه عشان تبدأ حضورك الرقمي وتعرض شغلك بصورة مميزة.</p></div>
+      <div class="grid">
+        <article class="card"><div class="ico">🌐</div><h3>تصميم مواقع ويب</h3><p>مواقع عصرية ومتجاوبة مع الموبايل والكمبيوتر، بتجربة استخدام سهلة.</p></article>
+        <article class="card"><div class="ico">🚀</div><h3>صفحات هبوط</h3><p>صفحات مركزة تعرض خدمتك أو منتجك وتشجع الزائر يتواصل معاك.</p></article>
+        <article class="card"><div class="ico">🏢</div><h3>مواقع شركات</h3><p>موقع منظم للتعريف بشركتك وخدماتها وطرق التواصل معها.</p></article>
+        <article class="card"><div class="ico">🎨</div><h3>تصميم لوجوهات</h3><p>أفكار بصرية تساعد مشروعك يكون له شكل وهوية مميزة.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="container"><div class="section-head"><h2>من أعمالنا</h2><p>نماذج من المشاريع التي نفذناها.</p></div>
+      <article class="project">
+        <div class="project-preview"><div><strong>ملاكي ❤️</strong><br><span style="color:#d8eaff">حكايتنا الصغيرة</span></div></div>
+        <div><span class="eyebrow">مشروع ويب</span><h3>ملاكي – حكايتنا الصغيرة</h3><p>صفحة ويب شخصية بتصميم رومانسي، تضم عدّادًا زمنيًا وذكريات ورسائل تفاعلية.</p><a class="btn" href="https://bobmohamed860-cloud.github.io/Good-/" target="_blank" rel="noopener">افتح المشروع ↗</a></div>
+      </article>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container"><div class="section-head"><h2>هنشتغل على مشروعك إزاي؟</h2><p>خطوات بسيطة وواضحة من أول الفكرة لحد تسليم الموقع.</p></div>
+      <div class="steps">
+        <article class="card"><div class="step-number">01</div><h3>احكيلنا فكرتك</h3><p>ابعتلنا نوع مشروعك والخدمة اللي محتاجها على واتساب.</p></article>
+        <article class="card"><div class="step-number">02</div><h3>نحدد التفاصيل</h3><p>نتفق على شكل الموقع والأقسام والمحتوى المطلوب.</p></article>
+        <article class="card"><div class="step-number">03</div><h3>نبدأ التنفيذ</h3><p>نشتغل على التصميم ونشاركك رابط المعاينة للمراجعة.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container"><div class="contact"><span class="eyebrow">جاهز تبدأ؟</span><h2>خلينا نبني فكرتك على الإنترنت</h2><p>ابعتلنا رسالة على واتساب واحكيلنا عن مشروعك.</p><a class="btn" href="https://wa.me/201140182250?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Art%20love%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9" target="_blank" rel="noopener">تواصل عبر واتساب ↗</a><div class="social-links" aria-label="حسابات Art love على مواقع التواصل">
+      <a class="social-link" href="https://www.instagram.com/new_art_love3?vrfl=MWR4Zjl2dDMyZ2J0cw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm5 2.3a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2.2a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zm5.8-3.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a class="social-link" href="https://www.tiktok.com/@new_art_love_?_r=1&_t=ZS-9AzwX1gZLwC" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.2a5.9 5.9 0 0 1-3.7-3.7A6.4 6.4 0 0 1 15.6 1h-3.8v14.1a2.8 2.8 0 1 1-2.8-2.8c.3 0 .6 0 .9.1V8.5a7 7 0 1 0 5.7 6.9V8.2a9.6 9.6 0 0 0 5.6 1.8V6.2h-1.6z"/></svg>
+        <span>TikTok</span>
+      </a>
+    </div></div></div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><span>© <span id="year"></span> Art love — جميع الحقوق محفوظة</span><div class="social-links" aria-label="حسابات Art love على مواقع التواصل">
+      <a class="social-link" href="https://www.instagram.com/new_art_love3?vrfl=MWR4Zjl2dDMyZ2J0cw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm5 2.3a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2.2a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zm5.8-3.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a class="social-link" href="https://www.tiktok.com/@new_art_love_?_r=1&_t=ZS-9AzwX1gZLwC" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.2a5.9 5.9 0 0 1-3.7-3.7A6.4 6.4 0 0 1 15.6 1h-3.8v14.1a2.8 2.8 0 1 1-2.8-2.8c.3 0 .6 0 .9.1V8.5a7 7 0 1 0 5.7 6.9V8.2a9.6 9.6 0 0 0 5.6 1.8V6.2h-1.6z"/></svg>
+        <span>TikTok</span>
+      </a>
+    </div></div></footer>
+<a class="wa-float" href="https://wa.me/201140182250" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">واتساب ✆</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
